@@ -12,9 +12,10 @@ public class Main_191 {
         //segunda pecera se resata la diferencia y la tercera pecera se resta la diferencia indicada sobre la segunda pecera, o lo que es lo mismo,
         //restarle dos veces la diferencia sobre el valor de la primera pecera. Por lo que en total debemos restar 3 veces la diferencia a la multiplicación 
         //del número de peceras por la capacidad de la más grande. En el caso de las 3 peceras el número de diferencias es 3, pero cuando sn 4 peceras el 
-        //número de diferencias es 6 y para 5 es 10
+        //número de diferencias es 6 y para 5 es 10. Para sacar este número debemos utilizar la siguiente formula n*(n+1)/2.
         int s = ((Integer.parseInt(datos[0]) - 1) * Integer.parseInt(datos[0]))/2;
         
+        //Una vez sepamos el número de veces que tenemos que restar la diferencia la restamos al numero de peceras por la contidad de la máxima.
         System.out.println((Integer.parseInt(datos[1])*Integer.parseInt(datos[0]))-(s*(Integer.parseInt(datos[2]))));
     } 
     public static void main(String[] args) {
